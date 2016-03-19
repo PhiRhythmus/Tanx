@@ -1,0 +1,68 @@
+@font-face {
+	font-family: "socicon";
+	src:url("../fonts/socicon.eot");
+	src:url("../fonts/socicon.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/socicon.woff") format("woff"),
+		url("../fonts/socicon.ttf") format("truetype"),
+		url("../fonts/socicon.svg#socicon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.ssba_facebook_share, 
+.ssba_buffer_share, 
+.ssba_diggit_share, 
+.ssba_flattr_share, 
+.ssba_reddit_share, 
+.ssba_stumbleupon_share,
+.ssba_tumblr_share, 
+.ssba_vk_share, 
+.ssba_google_share, 
+.ssba_twitter_share, 
+.ssba_linkedin_share, 
+.ssba_pinterest_share {
+	font-family: "socicon" !important;
+}
+
+.ssba_email_share,
+.ssba_print, 
+.ssba_yummly_share {
+	font-family: 'FontAwesome' !important;
+	position: relative;
+	top:-3px;
+}
+
+.ssba_facebook_share img,
+.ssba_buffer_share img,
+.ssba_email_share img,
+.ssba_diggit_share img,
+.ssba_flattr_share img,
+.ssba_print img,
+.ssba_reddit_share img,
+.ssba_stumbleupon_share img,
+.ssba_tumblr_share img,
+.ssba_vk_share img,
+.ssba_google_share img,
+.ssba_yummly_share img,
+.ssba_twitter_share img,
+.ssba_linkedin_share img,
+.ssba_pinterest_share img {
+	display: none !important;
+}
+
+/* Individual Styling */
+.ssba_facebook_share:before { content:"\e041"; }
+.ssba_buffer_share:before { content:"\e018"; }
+.ssba_email_share:before { content:"\f003"; }
+.ssba_diggit_share:before { content:"\e025"; }
+.ssba_flattr_share:before { content:"\e02f"; }
+.ssba_print:before { content:"\f02f"; }
+.ssba_reddit_share:before { content:"\e022"; }
+.ssba_stumbleupon_share:before { content:"\e024"; }
+.ssba_tumblr_share:before { content:"\e059"; }
+.ssba_vk_share:before { content:"\e01a"; }
+.ssba_google_share:before { content:"\e042"; }
+.ssba_yummly_share:before { content:"\aaa"; }
+.ssba_twitter_share:before { content:"\e040"; }
+.ssba_linkedin_share:before { content:"\e049"; }
+.ssba_pinterest_share:before { content:"\e043"; }
