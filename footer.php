@@ -2,7 +2,6 @@
 
 <footer>
 	<div class="container">
-		<div class="row">
 			<div class="col-md-4 copyright">
 				<?php
 					$copyright = ot_get_option('footer_copyright_text');
@@ -21,7 +20,6 @@
 					}
 				?>
 			</div>
-		</div>
 	</div>
 </footer>
 
