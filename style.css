@@ -37,6 +37,7 @@ body {
 	-o-transition: width .5s ease;
 	transition: width .5s ease;
 	width:100%;
+	overflow-x: hidden;
 }
 
 #wrapper.active {
@@ -761,6 +762,9 @@ input:focus {
 	outline:0;
 	border-bottom:2px solid transparent;
 	border-color: #f44336;
+}
+.comment-form > p {
+	margin-bottom: 40px;
 }
 .comment-form > p > label {
 	margin-right: 20px;
