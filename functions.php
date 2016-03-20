@@ -153,26 +153,6 @@ function tanx_admin_scripts() {
 }
 add_action( 'admin_init', 'tanx_admin_scripts' );
 
-function add_fonts() {
-    $url = "https://www.googleapis.com/webfonts/v1/webfonts?sort=alpha&key=AIzaSyB8G-4UtQr9fhDYTiNrDP40Y5GYQQKrNWI";
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-    curl_setopt($ch, CURLOPT_HEADER, false);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_REFERER, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-    $result = curl_exec($ch);
-    curl_close($ch);
-    $tanx_font_array = json_decode($result, true)["items"];
-    $tanx_font_output = "";
-    foreach($tanx_font_array as $tanx_font) {
-        $tanx_font_output .= "<i>" . $tanx_font['family'] . "</i><br>";
-    }
-    $tanx_font_builder = "<div class='font-helper' style='display:none'>" . $tanx_font_output . "</div>";
-    echo $tanx_font_builder;
-}
-
 function tanx_register_my_menus() {
   register_nav_menus(
     array(
