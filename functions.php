@@ -1,5 +1,4 @@
 <?php
-define( 'WP_DEBUG', true );
 /**
  * Optional: set 'ot_show_pages' filter to false.
  * This will hide the settings & documentation pages.
