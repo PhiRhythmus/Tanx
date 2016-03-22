@@ -832,6 +832,12 @@ ul.commentlist {
 	display: inline-block;
 }
 
+.commentlist .comment .comment-body:after {
+	content: '';
+	clear:both;
+	display: table;
+}
+
 .commentlist .comment ul.children {
 	width:100%;
 	display: inline-block;
@@ -967,7 +973,12 @@ ul.commentlist {
 }
 
 .comment-respond .comment-reply-title {
+	font-size: 1.5em;
+}
+
+.comment-respond .comment-reply-title #cancel-comment-reply-link {
 	font-size: 1.125em;
+	margin-left: 20px;
 }
 
 .comment-respond .logged-in-as {

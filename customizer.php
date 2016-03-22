@@ -76,7 +76,8 @@
 			footer .social a:hover,
 			.social .ssba-wrap a:hover,
 			nav .expand-top-menu.active,
-			footer .social a:hover {
+			footer .social a:hover,
+			.comment-respond .comment-reply-title #cancel-comment-reply-link {
 				color: " . ot_get_option('site_accent_color') . ";
 			}
 			.underline_accent,
@@ -132,7 +133,8 @@
 			#sidebar-404 .widgettitle,
 			#sidebar-404 ul li a:hover,
 			#sidebar-404 .tagcloud > a:hover,
-			.portfolio-item-holder .overlay .project-details {
+			.portfolio-item-holder .overlay .project-details,
+			.comment-respond .comment-reply-title {
 				color: " . ot_get_option('title_color') . ";
 			}
 			p,
