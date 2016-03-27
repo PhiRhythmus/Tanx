@@ -1903,3 +1903,9 @@ ul#sidebar .widget ul > li .arrow_carrot-down {
 		margin-bottom: 10px;
 	}
 }
+
+@media(min-width:769px) {
+	.header-menu-container {
+		display: block !important;
+	}
+}
