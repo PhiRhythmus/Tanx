@@ -489,6 +489,10 @@ body.error404 .home-logo {
 	margin-bottom: 60px;
 }
 
+.post .post-header { 
+	width: 100%;
+}
+
 .post .post-title {
 	margin-bottom: 30px;
 	color: #111;
