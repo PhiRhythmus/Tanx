@@ -171,6 +171,14 @@
 			}
 			p {
 				font-weight: " . ot_get_option('paragraph_font_weight') . ";
+			} 
+			.bottom-overlay {
+				background: -moz-linear-gradient(top, " . ot_get_option("overlay_primary_color") . " 0%, " . ot_get_option("overlay_secondary_color") . " 100%);
+			    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%," . ot_get_option("overlay_primary_color") . "), color-stop(100%," . ot_get_option("overlay_secondary_color") . "));
+			    background: -webkit-linear-gradient(top, " . ot_get_option("overlay_primary_color") . " 0%," . ot_get_option("overlay_secondary_color") . " 100%);
+			    background: -o-linear-gradient(top, " . ot_get_option("overlay_primary_color") . " 0%," . ot_get_option("overlay_secondary_color") . " 100%);
+			    background: -ms-linear-gradient(top, " . ot_get_option("overlay_primary_color") . " 0%," . ot_get_option("overlay_secondary_color") . " 100%);
+			    background: linear-gradient(to bottom, " . ot_get_option("overlay_primary_color") . " 0%, " . ot_get_option("overlay_secondary_color") . " 100%);
 			}
 		</style>";
 		wp_add_inline_style('main', $custom_css);

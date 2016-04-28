@@ -149,7 +149,7 @@ a[rel^="attachment"] {
     background: -webkit-linear-gradient(top, #eef1f8 0%,#ffffff 100%);
     background: -o-linear-gradient(top, #eef1f8 0%,#ffffff 100%);
     background: -ms-linear-gradient(top, #eef1f8 0%,#ffffff 100%);
-    background: linear-gradient(to bottom, #eef1f8 0%, rgba(255,0,0,0) 100%);
+    background: linear-gradient(to bottom, #eef1f8 0%, #ffffff 100%);
     filter:
 	z-index:-1;
 }
