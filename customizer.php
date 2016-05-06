@@ -1,24 +1,42 @@
-<?php 
-	function tanx_customize(){
+<?php
 
-
+	/**
+	 * Font primary settings
+	 * @return mixed
+	 */
+	function font_primary() {
 		$font_primary = ot_get_option('primary_font', 'Open Sans');
 		if(!isset($font_primary[0]['family'])){
 			$font_primary = array(array('family'=>$font_primary));
-			
+
 		}
 		$font_primary_name = str_replace(' ', '+',$font_primary[0]['family']);
-		wp_enqueue_style('tanx_primary_google_font', 'http://fonts.googleapis.com/css?family=' . $font_primary_name . ':400,100,900italic,900,700,500italic,500,700italic,400italic,300italic,300,100italic');
 
+		return $font_primary_name;
+	}
 
+	/**
+	 * Font secondary settings
+	 * @return mixed
+	 */
+	function font_secondary() {
 		$font_secondary = ot_get_option('secondary_font' , 'Open Sans');
 		if(!isset($font_secondary[0]['family'])){
-	
+
 			$font_secondary = array(array('family'=>$font_secondary));
 		}
 		$font_secondary_name = str_replace(' ', '+',$font_secondary[0]['family']);
-		wp_enqueue_style('tanx_secondary_google_font', 'http://fonts.googleapis.com/css?family=' . $font_secondary_name . ':400,100,900italic,900,700,500italic,500,700italic,400italic,300italic,300,100italic');
-		
+
+		return $font_secondary_name;
+	}
+
+	function font_google_loader() {
+		wp_enqueue_style('tanx_primary_google_font', 'https://fonts.googleapis.com/css?family=' . font_primary() . ':400,100,900italic,900,700,500italic,500,700italic,400italic,300italic,300,100italic', array(), '1.0.0', false);
+		wp_enqueue_style('tanx_secondary_google_font', 'https://fonts.googleapis.com/css?family=' . font_secondary() . ':400,100,900italic,900,700,500italic,500,700italic,400italic,300italic,300,100italic', array(), '1.0.0', false);
+	}
+	add_action('wp_enqueue_scripts', 'font_google_loader');
+
+	function tanx_customize(){
 		$custom_css = "
 		<style>
 			body {
@@ -26,12 +44,6 @@
 			}
 			nav.top-nav.nav-fixed {
 				background: " . ot_get_option('nav_background') . ";
-			}
-			h1, h2, h3, h4, h5, h6, .top-nav .menu li a, .type-post ul li .list-title, .type-page ul li .list-title, footer .copyright, a.back-to-top, .comment-form > p > label, .form-label, .wpcf7-form-control, ul#sidebar .widget ul li,ul#sidebar .widget ul li a, .portfolio-item-holder .overlay .project-details {
-				font-family: '" . $font_primary['0']['family'] . "';
-			}
-			body, .home-logo .website-description {
-				font-family: '" . $font_secondary['0']['family'] . "';
 			}
 			.sidebar.main-sidebar {
 				background: " . ot_get_option('sidebar_background') . ";
@@ -143,7 +155,7 @@
 			.home-logo .website-description,
 			.type-post p,
 			.type-page p,
-			.type-portfolio p
+			.type-portfolio p,
 			.post-content ul li,
 			.type-post a,
 			.type-page a,
@@ -184,7 +196,8 @@
 		wp_add_inline_style('main', $custom_css);
 	}
 
-	add_action('wp_head', 'tanx_customize');
+	//add_action('wp_head', 'tanx_customize');
+	add_action( 'wp_enqueue_scripts', 'tanx_customize' );
 
 	function fonthelp() {
 		if (!(defined('DOING_AJAX') && DOING_AJAX)) {
