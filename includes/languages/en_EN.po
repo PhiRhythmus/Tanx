@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tanx\n"
+"POT-Creation-Date: 2016-05-06 17:35-0800\n"
+"PO-Revision-Date: 2016-05-06 17:350800\n"
+"Last-Translator: WebPositive <hello@progweb.hu>\n"
+"Language-Team: WebPositive\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+
+msgid "Continue reading"
+msgstr ""
+
+msgid "Back to top"
+msgstr ""
+
+msgid "Reply"
+msgstr ""
+
+msgid "Category archives for: "
+msgstr ""
+
+msgid "Tag archives for: "
+msgstr ""
+
+msgid "Archives"
+msgstr ""
+
+msgid "Search results for:"
+msgstr ""
+
+msgid "No search results found for: "
+msgstr ""
+
+msgid "404"
+msgstr ""
+
+msgid "Keep calm and search again!"
+msgstr ""
+
+msgid "Load More Posts"
+msgstr ""
+
+msgid "Share This Project"
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Tags"
+msgstr ""
+
+msgid "Previous Project"
+msgstr ""
+
+msgid "Next Project"
+msgstr ""
+
+msgid "Share Story"
+msgstr ""
+
+msgid "Previous Post"
+msgstr ""
+
+msgid "Next Post"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Search..."
+msgstr ""
+
+msgid "I'm sure we can come up with something..."
+msgstr ""
+
+msgid "Leave a Comment"
+msgstr ""
+
+msgid "Post Comment"
+msgstr ""
+
+msgid "No Comments"
+msgstr ""
+
+msgid "One Comment"
+msgstr ""
+
+msgid "% Comments"
+msgstr ""
+
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+msgid "John Doe"
+msgstr ""
+
+msgid "me@mail.com"
+msgstr ""
+
+msgid "www.me.com"
+msgstr ""
+
+msgid "Your thoughts..."
+msgstr ""

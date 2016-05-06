@@ -1,4 +1,10 @@
 <?php
+
+function tanx_setup_textdomain(){
+    load_theme_textdomain('tanx', get_template_directory() . '/includes/languages');
+}
+add_action('after_setup_theme', 'tanx_setup_textdomain');
+
 /**
  * Optional: set 'ot_show_pages' filter to false.
  * This will hide the settings & documentation pages.
