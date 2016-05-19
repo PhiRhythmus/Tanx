@@ -7,7 +7,7 @@
 		<?php if(have_posts()) :
 			while(have_posts()) : the_post(); ?>
 				<div <?php post_class('post wow fadeInUp'); ?>>
-					<?php get_template_part('content', get_post_format());  ?>
+					<?php get_template_part('content-excerpt', get_post_format());  ?>
 				</div>
 			<?php endwhile;
 		endif; ?>

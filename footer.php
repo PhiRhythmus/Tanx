@@ -23,7 +23,7 @@
 	</div>
 </footer>
 
-<a href="#" class="back-to-top"><?php _e('Back to top', 'Tanx'); ?></a>
+<a href="#" class="back-to-top"><?php _e('Back to top', 'tanx'); ?></a>
 <?php wp_footer(); ?>
 
 </div>
